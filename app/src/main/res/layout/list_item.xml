@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_background"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/list_item_icon"
+        android:layout_width="@dimen/picture_size"
+        android:layout_height="@dimen/picture_size"
+        android:layout_alignParentTop="true"
+        android:layout_margin= "@dimen/default_margin"/>
+
+    <RelativeLayout
+        android:id="@+id/text_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/list_item_icon"
+        android:layout_toEndOf="@id/list_item_icon"
+        android:minHeight="@dimen/list_item_height"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_padding">
+
+        <TextView
+            android:id="@+id/venue_name_view"
+            style="@style/WordListStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/list_item_placeholder_one"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/venue_address_view"
+            style="@style/WordListStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/venue_name_view"
+            android:text="@string/list_item_placeholder_two" />
+
+        <TextView
+            android:id="@+id/venue_telephone_view"
+            style="@style/WordListStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/venue_address_view"
+            android:text="@string/list_item_placeholder_three" />
+    </RelativeLayout>
+
+</RelativeLayout>

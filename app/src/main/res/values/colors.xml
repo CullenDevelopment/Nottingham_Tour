@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="primary_color">#195905</color>
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="primary_dark_color">#2F1D1A</color>
+
+    <!-- Background color for app -->
+    <color name="black_background">#000000</color>
+
+    <!-- Background color for the numbers category -->
+    <color name="category_accomodation">#124104</color>
+
+    <!-- Background color for the family members category -->
+    <color name="category_dining">#195905</color>
+
+    <!-- Background color for the colors category -->
+    <color name="category_explore">#207106</color>
+
+    <!-- Background color for the phrases category -->
+    <color name="category_museums">#278908</color>
+
+    <!-- text color for the word lists -->
+    <color name="white">#FFFFFF</color>
+
+    <!-- background color in styling of tabs -->
+    <color name="background">#195905</color>
+
+    <!-- text color when tab not selected -->
+    <color name="tab_text_color">#A8A19E</color>
+
+</resources>

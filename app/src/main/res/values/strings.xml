@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Nottingham Tour</string>
+
+    <!-- placeholder text in list_item_layout -->
+    <string name="list_item_placeholder_one">venueName</string>
+    <string name="list_item_placeholder_two">venueAddress</string>
+    <string name="list_item_placeholder_three">venueTelephone</string>
+    <string name="accommodation">Accommodation</string>
+    <string name="dining">Dining</string>
+    <string name="explore">Explore</string>
+    <string name="museums">Museums</string>
+</resources>
