@@ -32,26 +32,26 @@ public class ExploreFragment extends Fragment {
 
         // Create a list of Tour destination details
         final ArrayList<Tour> details = new ArrayList<Tour>();
-        details.add(new Tour("Theatre Royal", "Theatre Square,\nNottingham,\nNG1 5ND",
-                "0115 989 5555", R.drawable.theatre_royal, "https://trch.co.uk/"));
-        details.add(new Tour("Royal Concert Hall", "Theatre Square,\nNottingham,\nNG1 5ND",
-                "0115 989 5555", R.drawable.royal_concert_hall, "https://trch.co.uk/"));
-        details.add(new Tour("Playhouse Theatre", "Wellington Circus,\nNottingham\nNG1 5AF",
-                "0115 941 9419", R.drawable.playhouse, "https://www.nottinghamplayhouse.co.uk"));
-        details.add(new Tour("Robin Hood Experience", "94, Friar Ln,\nNottingham,\nNG1 6EB",
-                "0115 947 4807", R.drawable.robin_hood_experience, "https://www.visit-nottinghamshire.co.uk/things-to-do/the-robin-hood-experience-p690221"));
-        details.add(new Tour("Nottingham Castle", "Lenton Rd,\nNottingham,\nNG1 6EL",
-                "0115 876 1400", R.drawable.castle, "https://www.nottinghamcastle.org.uk/"));
-        details.add(new Tour("City of Caves", "Upper Level,\nBroadmarsh Shopping Centre,\nNottingham,\nNG1 7LS",
-                "0115 988 1955", R.drawable.city_of_caves, "http://www.nationaljusticemuseum.org.uk/venue/city-of-caves/"));
-        details.add(new Tour("Nottingham Contemporary ", "Weekday Cross,\nNottingham,\nNG1 2GB",
-                "0115 948 9750", R.drawable.nottingham_contemporary, "http://www.nottinghamcontemporary.org/"));
-        details.add(new Tour("Newstead Abbey", "Newstead Abbey,\nRavenshead,\nNottinghamshire,\nNG15 8NA",
-                "0115 876 3100", R.drawable.newstead_abbey, "https://www.newsteadabbey.org.uk/"));
-        details.add(new Tour("Wollaton Hall and Deer Park", "Wollaton Park,\nWollaton,\nNottingham,\nNG8 2AE",
-                "0115 876 3100", R.drawable.wollaton_hall, "https://www.wollatonhall.org.uk/"));
-        details.add(new Tour("National Video Game Arcade", "24-32, Carlton St,\nNottingham,\nNG1 1NN",
-                "0115 881 3091", R.drawable.national_videogame_arcade, "https://www.thenva.com/"));
+        details.add(new Tour(getContext().getString(R.string.theatre_royal), getContext().getString(R.string.theatre_royal_address),
+                getContext().getString(R.string.theatre_royal_telephone), R.drawable.theatre_royal, getContext().getString(R.string.theatre_royal_website)));
+        details.add(new Tour(getContext().getString(R.string.royal_concert_hall), getContext().getString(R.string.royal_concert_hall_address),
+                getContext().getString(R.string.royal_concert_hall_telephone), R.drawable.royal_concert_hall, getContext().getString(R.string.royal_concert_hall_website)));
+        details.add(new Tour(getContext().getString(R.string.playhouse), getContext().getString(R.string.playhouse_address),
+                getContext().getString(R.string.playhouse_telephone), R.drawable.playhouse, getContext().getString(R.string.playhouse_website)));
+        details.add(new Tour(getContext().getString(R.string.robin_hood), getContext().getString(R.string.robin_hood_address),
+                getContext().getString(R.string.robin_hood_telephone), R.drawable.robin_hood_experience, getContext().getString(R.string.robin_hood_website)));
+        details.add(new Tour(getContext().getString(R.string.castle), getContext().getString(R.string.castle_address),
+                getContext().getString(R.string.castle_telephone), R.drawable.castle, getContext().getString(R.string.castle_website)));
+        details.add(new Tour(getContext().getString(R.string.caves), getContext().getString(R.string.caves_address),
+                getContext().getString(R.string.caves_telephone), R.drawable.city_of_caves, getContext().getString(R.string.caves_website)));
+        details.add(new Tour(getContext().getString(R.string.nottingham_contemporary), getContext().getString(R.string.nottingham_contemporary_address),
+                getContext().getString(R.string.nottingham_contemporary_telephone), R.drawable.nottingham_contemporary, getContext().getString(R.string.nottingham_contemporary_website)));
+        details.add(new Tour(getContext().getString(R.string.newstead), getContext().getString(R.string.newstead_address),
+                getContext().getString(R.string.newstead_telephone), R.drawable.newstead_abbey, getContext().getString(R.string.newstead_website)));
+        details.add(new Tour(getContext().getString(R.string.wollaton), getContext().getString(R.string.wollaton_address),
+                getContext().getString(R.string.wollaton_telephone), R.drawable.wollaton_hall, getContext().getString(R.string.wollaton_website)));
+        details.add(new Tour(getContext().getString(R.string.national_video), getContext().getString(R.string.national_video_address),
+                getContext().getString(R.string.national_video_telephone), R.drawable.national_videogame_arcade, getContext().getString(R.string.national_video_website)));
 
         // Create an {@link TourAdapter}, whose data source is a list of {@link Tour objects}. The
         // adapter knows how to create list items for each item in the list.

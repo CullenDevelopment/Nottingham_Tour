@@ -31,20 +31,20 @@ public class MuseumsFragment extends Fragment {
 
         // Create a list of Tour destination details
         final ArrayList<Tour> details = new ArrayList<Tour>();
-        details.add(new Tour("Nottingham Industrial Museum", "The Courtyard,\nWollaton Hall and Deer Park,\nNottingham,\nNG8 2AE",
-                "0115 915 3936", R.drawable.industrial_museum, "https://www.nottinghamindustrialmuseum.org.uk/"));
-        details.add(new Tour("National Justice Museum", "High Pavement,\nNottingham,\nNG1 1HN",
-                "0115 952 0555", R.drawable.national_justice_museum, "http://www.nationaljusticemuseum.org.uk/"));
-        details.add(new Tour("Framework Knitters Museum", "Chapel St,\nRuddington,\nNottingham,\nNG11 6HE",
-                "0115 984 6914", R.drawable.framework_knitters, "https://www.frameworkknittersmuseum.org.uk/"));
-        details.add(new Tour("D.H. Lawrence Birthplace Museum", "8a, Victoria St,\nEastwood,\nNottingham,\nNG16 3AW",
-                "0115 917 3824", R.drawable.dh_lawrence_birthplace, "https://www.lleisure.co.uk/d-h-lawrence-birthplace-museum/"));
-        details.add(new Tour("William Booth Birthplace Museum", "14, Notintone Place,\nSneinton,\nNottingham,\nNG2 4QG ",
-                "0115 979 3464", R.drawable.william_booth_birthplace, "https://www.salvationarmy.org.uk/william-booth-birthplace-museum"));
-        details.add(new Tour("Papplewick Pumping Station", "Rigg Ln,\nRavenshead,\nNottingham,\nNG15 9AJ",
-                "0115 963 2938", R.drawable.papplewick_pumping_station, "http://www.papplewickpumpingstation.co.uk/"));
-        details.add(new Tour("Green's Windmill Museum ", "Windmill Ln,\nNottingham,\nNG2 4QB",
-                "0115 915 6878", R.drawable.greens_windmill, "https://www.greensmill.org.uk/"));
+        details.add(new Tour(getContext().getString(R.string.industrial_museum), getContext().getString(R.string.industrial_museum_address),
+                getContext().getString(R.string.industrial_museum_telephone), R.drawable.industrial_museum, getContext().getString(R.string.industrial_museum_website)));
+        details.add(new Tour(getContext().getString(R.string.justice_museum), getContext().getString(R.string.justice_museum_address),
+                getContext().getString(R.string.justice_museum_telephone), R.drawable.national_justice_museum, getContext().getString(R.string.justice_museum_website)));
+        details.add(new Tour(getContext().getString(R.string.knitters_museum), getContext().getString(R.string.knitters_museum_address),
+                getContext().getString(R.string.knitters_museum_telephone), R.drawable.framework_knitters, getContext().getString(R.string.knitters_museum_website)));
+        details.add(new Tour(getContext().getString(R.string.d_h_lawrence), getContext().getString(R.string.d_h_lawrence_address),
+                getContext().getString(R.string.d_h_lawrence_telephone), R.drawable.dh_lawrence_birthplace, getContext().getString(R.string.d_h_lawrence_website)));
+        details.add(new Tour(getContext().getString(R.string.booth), getContext().getString(R.string.booth_address),
+                getContext().getString(R.string.booth_telephone), R.drawable.william_booth_birthplace, getContext().getString(R.string.booth_website)));
+        details.add(new Tour(getContext().getString(R.string.papplewick), getContext().getString(R.string.papplewick_address),
+                getContext().getString(R.string.papplewick_telephone), R.drawable.papplewick_pumping_station, getContext().getString(R.string.papplewick_website)));
+        details.add(new Tour(getContext().getString(R.string.greens_mill), getContext().getString(R.string.greens_mill_address),
+                getContext().getString(R.string.greens_mill_telephone), R.drawable.greens_windmill, getContext().getString(R.string.greens_mill_website)));
 
 
         // Create an {@link TourAdapter}, whose data source is a list of {@link Tour object}s. The
